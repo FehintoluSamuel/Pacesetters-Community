@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> The FUTA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	body{
+		
+			font-family: "lato", sans-serif;
+		}
+		.sidenav{
+			height: 100%;
+			width: 160px;
+			position: fixed;
+			z-index: 1;
+			top: 0px;
+			left: 0px;
+			background-color: #111;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+		.sidenav a{ 
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #818181;
+			display: block;
+		}
+		.sidenav a:hover{
+			color: #f1f1f1 ;
+			
+		}
+		.sidenav a .active{
+			background-color:#2196f3
+			color:white;
+		}
+		.main{
+			margin-left: 146px;/*same width as the slidbar + left position in px*/
+			font-size: 28px;/*increased to enable scrolling*/
+			padding: 0px 10px;
+		}
+		@media screen and (max-height: 450px)
+		{
+			.sidenav{padding-top: 15px;}
+			.sidenav a{font-size: 18px;}
+		}
+	</style></head>
+<body>
+<div class="sidenav">
+	<a href="https://www.futa.edu.ng" style="background-color: #203354;height: 8%;" target="futaframe">FUTA Web</a>
+	<a href="https://www.schoolsfuta.edu.ng" style="background-color: #1c2e4a;height: 8%;" target="futaframe">Schools</a>
+	<a href="file:///C:/Users/hp/Desktop/WEBPAGE/PCMe/homepage.html" style="background-color: #192841;height: 8%;">Home</a>
+</div>
+<div>
+	<iframe src="file:///C:/Users/hp/Desktop/WEBPAGE/PCMe/futa/futasubpage.html" id="futaframe" name="futaframe" style="float: right; width: 87%;" height="580"></iframe>
+</div>
+<div class="main">
+</div>
+</body>
+</html>

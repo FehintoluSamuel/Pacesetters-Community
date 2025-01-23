@@ -1,0 +1,105 @@
+html,body{
+	margin: 0;
+	font-family: arial, helvetica, sans-serif;
+background-color: white; height: 100%; margin: 0; padding: 0;width: 100%;
+}
+.wz-slider{
+		max-width: 100%;
+		max-height: 400px;
+		margin: 0px auto;
+		border: none;
+		border-radius: 0px;
+		box-shadow: none;
+		overflow: hidden; 
+		padding: 0px;
+		display: block;
+	}
+.wz-slider figure img{
+	width: 20%;
+	height:400px;
+	float: left;
+}
+.wz-slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0px;
+	left: 0px;
+	animation: webzone 20s infinite linear;
+}
+@keyframes webzone{
+	0%{left: 0%;}
+	15%{left:0%;}
+	20%{left: -100%;}
+	35%{left: -100%;}
+	40%{left: -200%;}
+	60%{left: -200%;}
+	65%{left: -300%;}
+	80%{left: -300%}
+	85%{left: -400%;}
+	100%{left: -400%;}
+}
+
+header{
+	width: 100%;
+	background-color: #000;
+}
+header ul{
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+header ul li:last-child{
+	border-right: none;
+}
+	header ul li{
+		list-style: none;
+		position: relative;
+		padding: 10px 0px;
+		transition: 0.5s;
+		box-sizing:border-box;
+		border-right: 1px solid rgba(255,255,255,.2);
+	}
+header ul li:hover{
+	background:#2196f3;
+}
+	header ul li a{
+		text-decoration: none;
+		padding: 0 20px;
+		color: #fff;
+	}
+
+	header ul li ul
+	{
+		position: absolute;background-color: #000;
+		top: 43px;
+		left: 0;
+		display: block;
+		width: 200px;
+		transition: 0.5s;
+		opacity: 0;
+		visibility: hidden;
+	}
+	header ul li:hover ul{
+		opacity: 1;
+		visibility: visible;
+	}
+	header ul li ul li{
+		border-bottom:1px solid rgba(255,255,255,.2);
+		border-right: none;
+	}
+	@media(max-width:768px)
+	{
+		header ul{
+		display:block;
+	}
+		header ul li{
+		display:block;
+	}
+	header ul li ul{
+		width: 100%;
+		z-index: 1;
+	}
+
+	}
+
